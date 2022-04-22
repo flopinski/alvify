@@ -57,17 +57,17 @@ function images() {
 function build() {
   return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js"], {
     base: "app",
-  }).pipe(dest("dist"));
+  }).pipe(dest('dist'));
 }
 
 function cleanDist() {
-  return del("dist");
+  return del('dist');
 }
 
 function watching() {
-  watch(["app/scss/**/*.scss"], styles);
-  watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
-  watch(["app/**/*.html"]).on("change", browserSync.reload);
+  watch(['app/scss/**/*.scss'], styles);
+  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/**/*.html']).on('change', browserSync.reload);
 }
 
 exports.styles = styles;
