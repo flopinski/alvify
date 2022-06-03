@@ -6,9 +6,13 @@
   padding: 150px 0 160px;
   text-align: center;
   &__inner {
+    background: #f6f6f6;
+    border-radius: 30px;
+    opacity: 0.9;
     max-width: 570px;
     width: 100%;
     margin-left: auto;
+    padding: 10px;
   }
   &__subtitle {
     color: $accent;
@@ -62,32 +66,30 @@
 @media (max-width: 620px) {
   .promo {
     padding: 60px 0;
-    &__clock{
+    &__clock {
       justify-content: center;
       flex-wrap: wrap;
     }
-    &__clock-item{
+    &__clock-item {
       margin: 20px 35px;
     }
-
   }
-  .partners{
-    padding: 60px 0; 
-    &__list{
+  .partners {
+    padding: 60px 0;
+    &__list {
       flex-wrap: wrap;
       justify-content: center;
       height: auto;
       padding-bottom: 60px;
     }
-    &__item{
+    &__item {
       margin: 10px 35px;
     }
   }
 }
 @media (max-width: 500px) {
-  .partners{
-    
-    &__item{
+  .partners {
+    &__item {
       margin: 10px 21px;
     }
   }
@@ -95,19 +97,18 @@
 
 @media (max-width: 450px) {
   .promo {
-    &__clock{
+    &__clock {
       margin-top: 30px;
     }
-    &__clock-item{
+    &__clock-item {
       margin: 8px;
     }
-    &__link{
+    &__link {
       margin-top: 30px;
     }
   }
-   .partners{
-    
-    &__item{
+  .partners {
+    &__item {
       margin: 10px 25px;
     }
   }
